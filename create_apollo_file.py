@@ -1,7 +1,7 @@
 from calcul_equivalent import get_equivalent_data
 
 
-def replace_apollo_file(thorium, u233, u235, putot, cell_length, coolant_temperature):
+def create_apollo_file(thorium, u233, u235, putot, cell_length, coolant_temperature):
 
     with open("cell-depletion_uo2_iter.d", "r") as file:
         filedata = file.read()
@@ -45,7 +45,7 @@ coolant_temperatures = [300, 305]
 for coolant_temperature in coolant_temperatures:
     for cell_length in cell_lengths:
         for fissile in enrichments:
-            replace_apollo_file("NO", "1.E-12", fissile, "1.E-12", cell_length, coolant_temperature)
-            replace_apollo_file("NO", "1.E-12", "1.E-12", fissile, cell_length, coolant_temperature)
-            replace_apollo_file("YES", "1.E-12", fissile, "1.E-12", cell_length, coolant_temperature)
-            replace_apollo_file("YES", fissile, "1.E-12", "1.E-12", cell_length, coolant_temperature)
+            create_apollo_file("NO", "1.E-12", fissile, "1.E-12", cell_length, coolant_temperature)
+            create_apollo_file("NO", "1.E-12", "1.E-12", fissile, cell_length, coolant_temperature)
+            create_apollo_file("YES", "1.E-12", fissile, "1.E-12", cell_length, coolant_temperature)
+            create_apollo_file("YES", fissile, "1.E-12", "1.E-12", cell_length, coolant_temperature)

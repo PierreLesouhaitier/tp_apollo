@@ -1,0 +1,45 @@
+output_kinf_columns = [
+    "BURNUP (Mwd/t)",
+    "Value of moderation ration Vm/Vfuel",
+    "Value of ratio pitch/diameter (-)",
+    "Value of pitch (cm)",
+    "Value of Temperature of coolant (°C)",
+    "Value of density of coolant (°C)",
+    "Value of boron concentration in coolant (ppm)",
+    "Value of Temperature of fuel (°C)",
+    "Value of content (%) in U233",
+    "Value of content (%) in U235",
+    "Value of content (%) in Pu tot",
+    "KEFF (PCM)",
+    "KINF (PCM)",
+    "M2 (CM2)",
+    "B2 (CM-2)",
+]
+
+output_CR_Mass_columns = [
+    "BURNUP (Mwd/t)",
+    "temps (s)",
+    "Vol fuel (cm3) for cm height 2d",
+    "U233",
+    "U234",
+    "U235",
+    "U236",
+    "U238",
+    "TH232",
+    "PU238",
+    "PU239",
+    "PU240",
+    "PU241",
+    "PU242",
+    "AM241",
+    "AM242",
+    "CM242",
+    "CM243",
+]
+
+output_CR_cr_columns = [
+    "BURNUP (Mwd/t)",
+    "temps (s)",
+    "CR",
+    "CR Masse",
+]

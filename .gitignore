@@ -130,3 +130,6 @@ dmypy.json
 
 all_files/*
 all_results/*
+
+*.zip
+*.csv
